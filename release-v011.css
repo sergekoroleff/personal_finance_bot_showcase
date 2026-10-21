@@ -1,0 +1,16 @@
+/* v0.11 supplements v0.10's established premium design */
+.v11-switch{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0 8px}
+.v11-switch button{border-radius:12px;border:1px solid #395663;padding:10px 12px;background:#102632;color:#b6d0d6;font-size:11px;font-weight:750}
+.v11-switch button.active{background:#205446;color:#b9ffdf;border-color:#4abf98}
+.v11-graph{display:block;width:100%;height:150px;margin:15px 0 3px}
+.v11-figure{display:flex;justify-content:space-between;align-items:center;gap:15px;color:#a4c0ca;font-size:12px}
+.v11-figure strong{color:#95f6cb;font-size:28px}
+.v11-heatmap{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px;margin:24px 0 12px}
+.v11-cell{min-height:40px;border-radius:9px;border:1px solid #37505d;background:#1b2b3c}
+.v11-cell.level1{background:#214b47;border-color:#31695b}
+.v11-cell.level2{background:#267864;border-color:#3a9275}
+.v11-cell.level3{background:#47b38b;border-color:#59c9a3}
+.v11-legend{display:flex;gap:8px;align-items:center;color:#91acb9;font-size:10px}
+.v11-legend i{width:15px;height:15px;border-radius:4px;background:#1b2b3c}
+.v11-legend i:nth-of-type(2){background:#267864}.v11-legend i:nth-of-type(3){background:#47b38b}
+@media(max-width:700px){.v11-heatmap{gap:6px}.v11-cell{min-height:30px}}
