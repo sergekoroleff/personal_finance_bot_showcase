@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070e18">
+<meta name="description" content="Personal Finance v0.11 Financial Intelligence — пять новых функций Telegram Mini App. Демонстрационные данные.">
+<title>Personal Finance v0.11 · Financial Intelligence</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="release-v010.css"><link rel="stylesheet" href="release-v011.css">
+</head>
+<body>
+<header class="release-header"><a class="release-back" href="./">← На главную</a><span class="release-pill">v0.11 · ACCEPTED 5/5</span></header>
+<main class="release-shell">
+<p class="eyebrow">PERSONAL FINANCE · PRODUCT UPDATE / 21.10.2026</p>
+<h1>Financial<br><em>Intelligence.</em></h1>
+<p class="release-lead">От контроля бюджета — к планированию будущих решений. Пять новых возможностей: прогнозирование сценариев, запланированные покупки, финансовая тепловая карта, недельный обзор и прозрачность автоматизаций.</p>
+<div class="release-stats"><div><strong>05</strong><span>Новых функций</span></div><div><strong>7/7</strong><span>Smoke-тестов</span></div><div><strong>5/5</strong><span>Приёмка Mini App</span></div></div>
+<section class="release-grid" aria-label="Возможности версии 0.11">
+<article class="release-card"><div class="release-meta">01 / WHAT COMES NEXT</div><div class="release-icon">⌁</div><h2>Financial Forecast</h2><p>Три условных сценария изменения бюджета до отчётной даты. Переключай темп расходов и оценивай влияние будущих покупок.</p>
+<div class="v11-switch" aria-label="Сценарии прогноза"><button type="button" data-v11-scenario="save">Экономный</button><button type="button" data-v11-scenario="base" class="active">Базовый</button><button type="button" data-v11-scenario="active">Активный</button></div>
+<svg class="v11-graph" viewBox="0 0 320 122" role="img" aria-label="Условный график бюджетной траектории">
+<defs><linearGradient id="v11Shade" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#62edc0" stop-opacity=".28"/><stop offset="1" stop-color="#62edc0" stop-opacity="0"/></linearGradient></defs>
+<path id="v11Area" fill="url(#v11Shade)"></path><polyline id="v11Line" fill="none" stroke="#74f4c6" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"></polyline>
+</svg><div class="v11-figure"><span>Условный индекс остатка</span><strong id="v11Figure">65%</strong></div>
+<small>Иллюстративная математическая траектория, а не банковский прогноз или актуальный остаток.</small></article>
+
+<article class="release-card"><div class="release-meta">02 / PLAN AHEAD</div><div class="release-icon">▣</div><h2>Planned Expenses</h2><p>Покупки на будущие даты: сумма, название и планируемая карта. Создавай и удаляй планы, не меняя реальные балансы.</p>
+<div class="release-rows"><div><span>25 октября · страховка</span><b>12 000 ₽</b></div><div><span>30 октября · подписки</span><b>2 400 ₽</b></div><div><span>07 ноября · подарок</span><b>8 500 ₽</b></div></div>
+<small>Вымышленные записи. Реальное приложение хранит планы отдельно в приватной SQLite.</small></article>
+
+<article class="release-card"><div class="release-meta">03 / PATTERNS AT A GLANCE</div><div class="release-icon">▦</div><h2>Spending Heatmap</h2><p>35-дневный календарь с визуальной интенсивностью изменения доступных лимитов, только когда есть последовательные закрытия.</p>
+<div class="v11-heatmap" id="v11Heatmap" aria-label="Иллюстративная тепловая карта на синтетических данных"></div>
+<div class="v11-legend"><span>Нет данных</span><i></i><i></i><i></i><span>Динамика</span></div>
+<small>Это изменение доступных остатков, не подтверждённые банковские покупки. Пропуски не заменяются нулями.</small></article>
+
+<article class="release-card"><div class="release-meta">04 / SIGNAL OVER NOISE</div><div class="release-icon">↗</div><h2>Weekly Financial Review</h2><p>Срез недели по закрытым дням, динамике чистого долга, финансовой цели и полноте наблюдений.</p>
+<div class="release-rows"><div><span>Дней с закрытием</span><b>5 / 7</b></div><div><span>Наблюдений</span><b>4</b></div><div><span>Цель по последнему закрытию</span><b>Достигнута</b></div></div>
+<small>Демонстрационные данные. При недостатке истории интерфейс не придумывает значения.</small></article>
+
+<article class="release-card"><div class="release-meta">05 / CONFIDENCE BY DESIGN</div><div class="release-icon">◉</div><h2>Reliability Center</h2><p>В одном месте — зарегистрированные результаты Morning Briefing, Smart Auto Close, последнего закрытия и Google Sheets.</p>
+<div class="release-rows"><div><span>Morning Briefing</span><b>Ожидает запуска</b></div><div><span>Smart Auto Close</span><b>Нет новой попытки</b></div><div><span>Google Sheets</span><b>Последнее чтение</b></div></div>
+<small>Вымышленный пример интерфейса: статусы отражают события, но доставка Telegram на устройство проверяется отдельно.</small></article>
+</section>
+<section class="release-security"><p class="eyebrow">PRIVATE BY DESIGN</p><h2>Five new capabilities.<br>Zero exposure.</h2><p>Страница полностью статическая: ни финансовых API, ни реальных сумм, ни Telegram-токенов, ни адресов инфраструктуры. Настоящие операции остаются только в приватной Mini App.</p></section>
+<a class="release-back bottom" href="./">← Вернуться к главному showcase</a>
+</main><footer class="release-footer">PERSONAL FINANCE · v0.11 · FINANCIAL INTELLIGENCE · 2026</footer>
+<script src="release-v011.js" defer></script>
+</body></html>
