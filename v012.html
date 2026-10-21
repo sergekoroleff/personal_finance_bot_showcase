@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070e18">
+<meta name="description" content="Personal Finance v0.12 Decision Studio — пять новых функций безопасного финансового планирования. Все числа вымышленные.">
+<title>Personal Finance v0.12 · Decision Studio</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="release-v010.css"><link rel="stylesheet" href="release-v012.css"></head>
+<body><header class="release-header"><a href="./" class="release-back">← На главную</a><span class="release-pill">v0.12 · ACCEPTED 5/5</span></header>
+<main class="release-shell"><p class="eyebrow">PERSONAL FINANCE · PRODUCT UPDATE / 21.10.2026</p>
+<h1>Decision<br><em>Studio.</em></h1>
+<p class="release-lead">Пять новых инструментов, чтобы управлять не только сегодняшними цифрами, но и завтрашними решениями. Условные сценарии, планы, резерв и действия — в одном приватном финансовом пространстве.</p>
+<div class="release-stats"><div><strong>05</strong><span>Новых функций</span></div><div><strong>7/7</strong><span>Smoke-тестов</span></div><div><strong>5/5</strong><span>Проверок владельца</span></div></div>
+<section class="release-grid" aria-label="Возможности v0.12">
+<article class="release-card"><div class="release-meta">01 / PERSONAL SCENARIOS</div><div class="release-icon">≋</div><h2>Custom Pace Simulator</h2><p>Регулируй условный темп расходов и оценивай остаток бюджета на отчётную дату. Ни одна цифра не записывается в банк или Google Sheets.</p>
+<div class="v12-label"><span>Условный темп</span><strong id="v12PaceValue">100%</strong></div><input id="v12Pace" type="range" min="0" max="200" value="100" step="10" aria-label="Условный темп расходов в процентах">
+<div class="v12-results"><span>Условный остаток на отчётную дату</span><strong id="v12PaceResult">0 ₽</strong></div>
+<small>Иллюстрация на вымышленных данных: исходный бюджет 140 000 ₽, горизонт 14 дней, без плановых покупок.</small></article>
+<article class="release-card"><div class="release-meta">02 / FUTURE PURCHASES</div><div class="release-icon">✎</div><h2>Editable Planned Expenses</h2><p>Меняй название, дату, карту и сумму покупки прямо в форме Mini App — с сохранением и отменой. Всё отдельно от настоящих балансов.</p>
+<div class="release-rows"><div><span>Страховка · 27 октября</span><b>12 000 ₽</b></div><div><span>Подарок · 02 ноября</span><b>8 500 ₽</b></div><div><span>Подписка · 06 ноября</span><b>2 400 ₽</b></div></div>
+<small>Вымышленный пример, не подключённый к частной SQLite.</small></article>
+<article class="release-card"><div class="release-meta">03 / ALL DAYS, ONE VIEW</div><div class="release-icon">▦</div><h2>Monthly Finance Calendar</h2><p>Посмотри, какие дни действительно закрыты, где есть планируемые покупки, а где доступны только корректные наблюдения.</p>
+<div class="v12-month"><button id="v12Prev" type="button" aria-label="Предыдущий месяц">←</button><strong id="v12MonthLabel">Октябрь 2026</strong><button id="v12Next" type="button" aria-label="Следующий месяц">→</button></div>
+<div class="v12-calendar" id="v12Calendar" aria-label="Иллюстративный календарь"></div>
+<div id="v12CalendarDetail" class="v12-caption" aria-live="polite">Нажми на день для примера.</div>
+<small>Синтетические отметки. Реальная Mini App не выдаёт отсутствие закрытия за нулевые расходы.</small></article>
+<article class="release-card"><div class="release-meta">04 / YOUR SAFETY MARGIN</div><div class="release-icon">◇</div><h2>Safety Buffer</h2><p>Личный минимальный резерв служит ориентиром для планирования и не списывает средства ни с одной карты.</p>
+<div class="v12-buffer"><span>Пример резерва</span><strong>30 000 ₽</strong><div class="v12-track"><i></i></div><small>Неснижаемый порог для сценариев</small></div>
+<small>Резерв — расчётная настройка, не физически заблокированные деньги.</small></article>
+<article class="release-card"><div class="release-meta">05 / CONTEXTUAL GUIDANCE</div><div class="release-icon">◎</div><h2>Next Best Action</h2><p>Панель следующих шагов подсказывает, что требует внимания: черновик, ожидающая синхронизация, ближайшие планы или финансовая цель.</p>
+<div class="release-rows"><div><span>Черновик дня</span><b>Сохранён</b></div><div><span>Покупка</span><b>Через 3 дня</b></div><div><span>Финансовая цель</span><b>Не задана</b></div></div>
+<small>Демонстрационные статусы. Это правила интерфейса, а не автономный финансовый агент.</small></article>
+</section>
+<section class="release-security"><p class="eyebrow">PRIVATE BY DESIGN</p><h2>More control.<br>Same privacy.</h2><p>Страница полностью статическая. Все графики, суммы, планы и статусы вымышлены. Никаких запросов к приватному Telegram-боту, Google Sheets, финансовым API и пользовательским счетам.</p></section>
+<div class="v12-bottom-links"><a class="release-back" href="./">← На главную</a><a class="release-back" href="v011.html">Предыдущий релиз v0.11 →</a></div></main>
+<footer class="release-footer">PERSONAL FINANCE · v0.12 · DECISION STUDIO · 2026</footer><script src="release-v012.js" defer></script></body></html>
