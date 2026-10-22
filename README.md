@@ -2,7 +2,9 @@
 
 Премиальная публичная презентация персонального Telegram-бота и Mini App для управления финансовыми балансами и дневным бюджетом.
 
-**Сайт после активации GitHub Pages:** https://sergekoroleff.github.io/personal_finance_bot_showcase/
+**Сайт после активации GitHub Pages:** **Custom domain (GitHub Pages):** https://finlab.koroleff.online/
+
+**Original GitHub Pages URL:** https://sergekoroleff.github.io/personal_finance_bot_showcase/
 
 > **Важно:** этот репозиторий содержит только статический showcase. Здесь нет банковских данных, токенов, Google Sheets ID, ключей, адресов VPS, приватных API и кода основного финансового приложения. Все суммы внутри демонстрационного макета вымышлены.
 
@@ -142,3 +144,8 @@ Showcase by Serge Korolev · 2026.
 **Приёмка:** главная страница HTTPS `200`, health API `200`, private `/api/state` без Telegram-авторизации `401`; после переключения владелец подтвердил адрес, корректные финансовые показатели, доступность основных вкладок и кнопку обновления (**4/4**). Основной бюджет, Google Sheets, SQLite и три расписания автоматизации не менялись. Старый Tailscale Funnel не удалён — запасной путь переключения, не самостоятельный подтверждённый резервный тест.
 
 **Публичный сайт остаётся отдельным статическим showcase на GitHub Pages.** Он не подключается к приватному домену, не отображает реальные балансы и не содержит токенов, сетевых настроек или ID таблиц.
+
+
+## Custom domain migration · 22 October 2026
+
+Owner confirmed GitHub Pages DNS checks complete and public showcase opens successfully at https://finlab.koroleff.online/. Custom domain is configured by the `CNAME` file and Cloudflare DNS-only CNAME pointed at `sergekoroleff.github.io`. This is static GitHub Pages hosting, **not** a Cloudflare Tunnel or finance API. No private account data, tokens or production server addresses are published. Original GitHub Pages project URL was preserved as historical reference and may redirect to the new custom domain.
