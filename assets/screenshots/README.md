@@ -16,6 +16,6 @@ The 9 images below are real historical screenshots. The owner explicitly request
 | `08-telegram-morning.webp` | Telegram Morning Briefing | `29218.jpg` |
 | `09-telegram-reminder.webp` | Telegram Smart Reminder | `29239.jpg` |
 
-The optimized WebP images (800 px wide, no removal of financial figures) are contained in the owner-provided gallery asset pack generated for this release. The original `.jpg` files remain in the conversation. Upload these nine `.webp` files to this directory on branch `feature/real-screenshots-gallery-2026-11-08` **before merging to main**. The site is otherwise static HTML/CSS/JS and does not request live financial data.
+The optimized WebP images (800 px wide, no removal of financial figures) are contained in the owner-provided gallery asset pack generated for this release. The original `.jpg` files remain in the conversation. All nine `.webp` files were uploaded and verified by Git blob SHA, then merged into `main` through PR #1 on 08.11.2026. The site is otherwise static HTML/CSS/JS and does not request live financial data.
 
-**Gallery QA:** all nine `src` paths must return 200, thumbnails show fully in cards, lightbox opens/closes, arrows and ESC work, mobile layout does not overflow. Branch is not production until assets are present and PR is merged.
+**Gallery QA:** all nine `src` paths must return 200, thumbnails show fully in cards, lightbox opens/closes, arrows and ESC work, mobile layout does not overflow. Repository QA PASSED: assets and references are present in `main`. Browser/GitHub Pages visual smoke test is separate.
