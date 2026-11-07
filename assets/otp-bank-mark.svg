@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="ОТП Банк">
+  <rect x="2" y="2" width="92" height="92" rx="24" fill="#B5FF00"/>
+  <path d="M48.5 25a26 26 0 1 0 26 26" fill="none" stroke="#07120B" stroke-width="11" stroke-linecap="butt"/>
+  <circle cx="47.5" cy="50" r="13.5" fill="#07120B"/>
+  <circle cx="68" cy="30" r="8" fill="#07120B"/>
+</svg>
