@@ -1,0 +1,36 @@
+/* Real product screenshots gallery · 08 Nov 2026. No live financial API calls. */
+.gallery-intro{max-width:600px}
+.gallery-privacy-note{font-size:12px;color:#97afb9;margin:16px 0 0}
+.gallery-kicker{display:flex;align-items:center;gap:13px;margin:27px 0 16px;color:#b1d5da;font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:750}
+.gallery-kicker:after{content:"";height:1px;background:#284655;flex:1}
+.gallery-grid.gallery-real{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.gallery-real .gallery-slot{background:linear-gradient(160deg,#122b3b,#0c1a2a 75%);border:1px solid #305063;box-shadow:0 18px 48px #0002;transition:transform .24s ease,border-color .24s ease}
+.gallery-real .gallery-slot:hover{transform:translateY(-5px);border-color:#65e9bc77}
+.gallery-real .gallery-open{appearance:none;-webkit-appearance:none;display:block;width:100%;border:0;background:radial-gradient(circle at 50% 18%,#2b8e7955,transparent 65%),#091725;cursor:zoom-in;padding:19px 18px 0;position:relative;color:inherit;text-align:center}
+.gallery-real .gallery-open:focus-visible{outline:3px solid var(--mint);outline-offset:-5px}
+.gallery-real .gallery-shot-frame{height:clamp(310px,34vw,470px);width:100%;display:flex;align-items:flex-start;justify-content:center;overflow:hidden}
+.gallery-real .gallery-shot-frame img{display:block;width:auto;max-width:100%;height:100%;max-height:100%;object-fit:contain;object-position:center top;border-radius:15px 15px 0 0;box-shadow:0 9px 35px #0009}
+.gallery-real .gallery-zoom{display:flex;justify-content:center;align-items:center;gap:8px;padding:14px 0;color:#80edc7;font-size:11px;letter-spacing:.04em}
+.gallery-real .gallery-meta{padding:18px 19px 21px;display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.gallery-real .gallery-meta b{display:block;font-size:15px;line-height:1.35}
+.gallery-real .gallery-meta small{display:block;font-size:12px;color:#a3b9c3;line-height:1.55;margin-top:6px}
+.gallery-real .gallery-count{font-size:10px;letter-spacing:.1em;color:#74dabc;white-space:nowrap;padding-top:3px}
+.gallery-real .gallery-label{color:#68d5b2;font-size:10px;font-weight:750;letter-spacing:.14em;margin-bottom:9px;display:block}
+.gallery-real .gallery-slot.telegram .gallery-open{background:radial-gradient(circle at 65% 10%,#4a3e7150,transparent 65%),#111827}
+.gallery-real .gallery-slot.telegram .gallery-label{color:#d1b8ff}
+.gallery-lightbox{border:1px solid #355c68;border-radius:20px;background:#0c1927;color:#f0f7fa;padding:18px;max-width:min(720px,96vw);max-height:96dvh;width:max-content;min-width:min(390px,96vw);box-shadow:0 30px 90px #000c}
+.gallery-lightbox::backdrop{background:#020712e8;backdrop-filter:blur(10px)}
+.gallery-lightbox-head{display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.gallery-lightbox-head h3{font-size:16px;margin:0;font-weight:700;line-height:1.25}
+.gallery-lightbox-head small{font-size:11px;color:#9bb6c4;display:block;margin-top:4px}
+.gallery-lightbox-close{border:1px solid #426575;border-radius:50%;background:#142e3a;color:#fff;width:38px;height:38px;cursor:pointer;flex:none;font-size:20px}
+.gallery-lightbox-frame{min-height:120px;display:flex;justify-content:center;align-items:center;overflow:auto}
+.gallery-lightbox-frame img{display:block;height:auto;max-height:76dvh;max-width:100%;width:auto;object-fit:contain;border-radius:9px}
+.gallery-lightbox-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px}
+.gallery-lightbox-controls button{cursor:pointer;color:#ccfff0;border:1px solid #375761;background:#143041;border-radius:10px;padding:10px 14px;font:inherit;font-size:12px}
+.gallery-lightbox-controls button:focus-visible,.gallery-lightbox-close:focus-visible{outline:3px solid var(--mint)}
+.gallery-lightbox-controls span{font-size:12px;color:#9bb2c0}
+img.bankmark.omark{display:block;object-fit:contain;background:#b5ff00;color:transparent}
+@media(max-width:900px){.gallery-grid.gallery-real{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-real .gallery-shot-frame{height:420px}}
+@media(max-width:600px){.gallery-grid.gallery-real{grid-template-columns:1fr;gap:19px}.gallery-real .gallery-shot-frame{height:460px}.gallery-real .gallery-open{padding:14px 12px 0}.gallery-lightbox{padding:12px;max-width:98vw;min-width:0}.gallery-lightbox-frame img{max-height:75dvh}.gallery-lightbox-head h3{font-size:14px}.gallery-intro{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.gallery-real .gallery-slot{transition:none}.gallery-real .gallery-slot:hover{transform:none}}
