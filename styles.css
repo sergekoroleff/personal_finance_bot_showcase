@@ -3,3 +3,22 @@
 @media(max-width:800px){.wrap{width:min(calc(100% - 36px),var(--max))}.nav{height:72px}.links{display:none;position:absolute;top:72px;left:0;right:0;background:#0b1825;border-bottom:1px solid #345464;padding:20px;flex-direction:column;text-align:center}.links.open{display:flex}.menubtn{display:block}.hero{padding:64px 0 70px;grid-template-columns:1fr;text-align:center}.hero-lead{margin:auto}.hero-actions,.hero-foot{justify-content:center}.hero-visual{min-height:580px}.glass-left{left:2%}.glass-right{right:1%}.section{padding:79px 0}.section-head{display:block}.section-head>p{margin-top:20px}.experience-grid,.security-layout{grid-template-columns:1fr}.experience-notes{max-width:650px}.arch-grid{gap:6px}.arch-node{padding:18px 7px}.gallery-grid{gap:9px}.slot-visual{height:255px}.slot-footer{display:grid}.roadmap-strip{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:540px){.release{font-size:9px;padding:6px}.brand{font-size:13px}.brand small{font-size:6px}.brandmark{width:37px;height:37px}.hero h1{font-size:clamp(52px,14vw,78px)}.hero-lead{font-size:15px}.hero-foot{gap:17px}.hero-foot span{font-size:9px}.hero-visual{min-height:540px}.device{width:275px}.orbit{width:325px;height:325px}.orbit-b{width:250px;height:250px}.glass-floating{padding:11px}.glass-floating strong{font-size:10px}.glass-left{left:-5px;top:70px}.glass-right{right:-6px;bottom:90px}.visual-disclaimer{bottom:0;font-size:8px}.trustbar-inner{justify-content:center}.features,.gallery-grid{grid-template-columns:1fr}.feature.featured{grid-column:auto}.section-head h2,.security h2{font-size:42px}.demo-body{padding:14px;min-height:360px}.preview-switch{padding:9px 6px;gap:0;justify-content:space-between}.preview-switch button{padding:9px 8px;font-size:11px}.preview-top{padding:12px;font-size:8px}.preview-top .dummy{display:none}.demo-hero strong{font-size:30px}.demo-stat b{font-size:15px}.arch-shell{padding:15px}.arch-title{font-size:8px}.arch-grid{grid-template-columns:1fr;gap:6px}.arch-node{min-height:unset;padding:16px}.arch-arrow{transform:rotate(90deg);font-size:22px}.arch-store{grid-template-columns:1fr}.security-cards{gap:8px}.security-cards article{padding:14px}.security-cards article b{font-size:12px}.roadmap-strip{gap:6px}.roadmap-item{padding:14px 10px}.roadmap-item p{font-size:11px}.foot{flex-wrap:wrap;justify-content:center;text-align:center}.gallery-slot{max-width:430px;width:100%;margin:auto}.slot-visual{height:290px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+/* Finance Dashboard v1 – public demo only (all figures synthetic) */
+.finance-dashboard-release{padding-top:16px}
+.fd-showcase-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.fd-showcase-summary>div{background:linear-gradient(135deg,#132839,#102a28);border:1px solid #28534d;border-radius:18px;padding:23px;display:grid;gap:8px}
+.fd-showcase-summary span{font-size:11px;color:#72e7c1;font-weight:900;letter-spacing:.12em}
+.fd-showcase-summary b{font-size:18px;line-height:1.3}
+.fd-showcase-summary small{font-size:12px;line-height:1.55;color:#98b7b8}
+.fd-showcase-caption{font-size:12px;color:#91aeb5;margin-top:14px}
+.demo-dash-hero{background:linear-gradient(120deg,#135665,#176b6a,#24755a)}
+.demo-dash-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.demo-dash-tile{background:linear-gradient(145deg,#152c3f,#122637);border:1px solid #35576a;border-radius:13px;padding:13px;display:grid;align-content:start;gap:7px;min-width:0}
+.demo-dash-tile small{font-size:10px;color:#9bbdc9;line-height:1.3}
+.demo-dash-tile b{font-size:17px;letter-spacing:-.4px;overflow-wrap:anywhere}
+.demo-dash-bank{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:750}
+.demo-dash-bank .bankmark{width:25px;height:25px;min-width:25px;object-fit:contain;border-radius:7px}
+.demo-status-open{color:#8df0c6}
+.preview-switch{overflow-x:auto}
+.preview-switch button{white-space:nowrap}
+@media(max-width:700px){.fd-showcase-summary{grid-template-columns:1fr}.demo-dash-tile{padding:12px}.demo-dash-tile b{font-size:15px}}
