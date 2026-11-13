@@ -1,3 +1,11 @@
+## Finance Dashboard v1 — November 2026
+
+New first-screen **Finance Dashboard** (interactive, 100% synthetic public demonstration). Shows available balances for T-Bank and OTP, net debt, `salary − net debt` period remainder, days to end, day status, and the current limits for today and tomorrow. Smart What-if buttons update all related demo figures in place. **Обзор** remains the second tab, without the discontinued Financial Forecast panel.
+
+Public files updated: `index.html` (new first demo tab and Finance Dashboard showcase section), `script.js` (local-only live synthetic dashboard), `styles.css` (glass-style responsive dashboard), and this README. **No real account amounts, dates, private screenshots, credentials, server addresses, tokens, spreadsheets, or backend endpoints added.** The existing historical gallery was left unchanged. Separate production deployment verification is maintained only in the private project.
+
+---
+
 # Personal Finance Bot — Public Showcase
 
 ## Product Gallery — 08.11.2026 · реальные скриншоты (подготовлено к публикации)
